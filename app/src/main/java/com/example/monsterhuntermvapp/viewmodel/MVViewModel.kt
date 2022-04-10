@@ -7,6 +7,7 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.example.monsterhuntermvapp.rest.MotionValuesRepo
 import com.example.monsterhuntermvapp.utils.MotionValuesState
+import com.example.monsterhuntermvapp.utils.WeaponType
 import kotlinx.coroutines.CoroutineDispatcher
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
@@ -20,13 +21,14 @@ class MVViewModel @Inject constructor(
 
     private val _motionValuesLiveData: MutableLiveData<MotionValuesState> = MutableLiveData(MotionValuesState.LOADING)
     val motionValuesLiveData: LiveData<MotionValuesState> get() = _motionValuesLiveData
+    var weaponType: WeaponType = WeaponType.GREAT_SWORD
 
     fun getMotionValues() {
         _motionValuesLiveData.postValue(MotionValuesState.LOADING)
 
         viewModelScope.launch(ioDispatcher) {
             try {
-                val response = motionValuesRepo.getMotionValues()
+                val response = motionValuesRepo.getMotionValues(weaponType)
                 if (response.isSuccessful) {
                     response.body()?.let {
                         _motionValuesLiveData.postValue(MotionValuesState.SUCCESS(it))

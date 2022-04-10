@@ -1,6 +1,7 @@
 package com.example.monsterhuntermvapp.di
 
 import com.example.monsterhuntermvapp.MainActivity
+import com.example.monsterhuntermvapp.views.GreatSwordFrag
 import com.example.monsterhuntermvapp.views.HomeFrag
 import dagger.Component
 
@@ -11,4 +12,6 @@ import dagger.Component
 interface MVComponent {
 
     fun inject(mainActivity: MainActivity)
+    fun inject(homeFrag: HomeFrag)
+    fun inject(greatSwordFrag: GreatSwordFrag)
 }
