@@ -4,10 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".views.GreatSwordFrag">
+    tools:context=".views.SwordAndShieldFrag">
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/greatSwordRecView"
+        android:id="@+id/swordAndShieldRecView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:paddingTop="0dp"

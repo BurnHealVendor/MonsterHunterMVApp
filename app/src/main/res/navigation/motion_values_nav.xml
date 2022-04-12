@@ -13,6 +13,45 @@
         <action
             android:id="@+id/action_homeFrag_to_greatSwordFrag"
             app:destination="@id/greatSwordFrag" />
+        <action
+            android:id="@+id/action_homeFrag_to_longSwordFrag"
+            app:destination="@id/longSwordFrag" />
+        <action
+            android:id="@+id/action_homeFrag_to_swordAndShieldFrag"
+            app:destination="@id/swordAndShieldFrag" />
+        <action
+            android:id="@+id/action_homeFrag_to_dualBladesFrag"
+            app:destination="@id/dualBladesFrag" />
+        <action
+            android:id="@+id/action_homeFrag_to_hammerFrag"
+            app:destination="@id/hammerFrag" />
+        <action
+            android:id="@+id/action_homeFrag_to_huntingHornFrag"
+            app:destination="@id/huntingHornFrag" />
+        <action
+            android:id="@+id/action_homeFrag_to_lanceFrag"
+            app:destination="@id/lanceFrag" />
+        <action
+            android:id="@+id/action_homeFrag_to_gunlanceFrag"
+            app:destination="@id/gunlanceFrag" />
+        <action
+            android:id="@+id/action_homeFrag_to_switchAxeFrag"
+            app:destination="@id/switchAxeFrag" />
+        <action
+            android:id="@+id/action_homeFrag_to_chargeBladeFrag"
+            app:destination="@id/chargeBladeFrag" />
+        <action
+            android:id="@+id/action_homeFrag_to_insectGlaiveFrag"
+            app:destination="@id/insectGlaiveFrag" />
+        <action
+            android:id="@+id/action_homeFrag_to_lightBowgunFrag"
+            app:destination="@id/lightBowgunFrag" />
+        <action
+            android:id="@+id/action_homeFrag_to_heavyBowgunFrag"
+            app:destination="@id/heavyBowgunFrag" />
+        <action
+            android:id="@+id/action_homeFrag_to_bowFrag"
+            app:destination="@id/bowFrag" />
     </fragment>
 
     <fragment
@@ -20,4 +59,69 @@
         android:name="com.example.monsterhuntermvapp.views.GreatSwordFrag"
         android:label="fragment_great_sword"
         tools:layout="@layout/fragment_great_sword" />
+    <fragment
+        android:id="@+id/longSwordFrag"
+        android:name="com.example.monsterhuntermvapp.views.LongSwordFrag"
+        android:label="LongSwordFrag"
+        tools:layout="@layout/fragment_long_sword" />
+    <fragment
+        android:id="@+id/swordAndShieldFrag"
+        android:name="com.example.monsterhuntermvapp.views.SwordAndShieldFrag"
+        android:label="fragment_sword_and_shield"
+        tools:layout="@layout/fragment_sword_and_shield" />
+    <fragment
+        android:id="@+id/bowFrag"
+        android:name="com.example.monsterhuntermvapp.views.BowFrag"
+        android:label="fragment_bow"
+        tools:layout="@layout/fragment_bow" />
+    <fragment
+        android:id="@+id/chargeBladeFrag"
+        android:name="com.example.monsterhuntermvapp.views.ChargeBladeFrag"
+        android:label="fragment_charge_blade"
+        tools:layout="@layout/fragment_charge_blade" />
+    <fragment
+        android:id="@+id/dualBladesFrag"
+        android:name="com.example.monsterhuntermvapp.views.DualBladesFrag"
+        android:label="fragment_dual_blades"
+        tools:layout="@layout/fragment_dual_blades" />
+    <fragment
+        android:id="@+id/gunlanceFrag"
+        android:name="com.example.monsterhuntermvapp.views.GunlanceFrag"
+        android:label="fragment_gunlance"
+        tools:layout="@layout/fragment_gunlance" />
+    <fragment
+        android:id="@+id/hammerFrag"
+        android:name="com.example.monsterhuntermvapp.views.HammerFrag"
+        android:label="fragment_hammer"
+        tools:layout="@layout/fragment_hammer" />
+    <fragment
+        android:id="@+id/heavyBowgunFrag"
+        android:name="com.example.monsterhuntermvapp.views.HeavyBowgunFrag"
+        android:label="fragment_heavy_bowgun"
+        tools:layout="@layout/fragment_heavy_bowgun" />
+    <fragment
+        android:id="@+id/huntingHornFrag"
+        android:name="com.example.monsterhuntermvapp.views.HuntingHornFrag"
+        android:label="fragment_hunting_horn"
+        tools:layout="@layout/fragment_hunting_horn" />
+    <fragment
+        android:id="@+id/insectGlaiveFrag"
+        android:name="com.example.monsterhuntermvapp.views.InsectGlaiveFrag"
+        android:label="fragment_insect_glaive"
+        tools:layout="@layout/fragment_insect_glaive" />
+    <fragment
+        android:id="@+id/lanceFrag"
+        android:name="com.example.monsterhuntermvapp.views.LanceFrag"
+        android:label="fragment_lance"
+        tools:layout="@layout/fragment_lance" />
+    <fragment
+        android:id="@+id/lightBowgunFrag"
+        android:name="com.example.monsterhuntermvapp.views.LightBowgunFrag"
+        android:label="fragment_light_bowgun"
+        tools:layout="@layout/fragment_light_bowgun" />
+    <fragment
+        android:id="@+id/switchAxeFrag"
+        android:name="com.example.monsterhuntermvapp.views.SwitchAxeFrag"
+        android:label="fragment_switch_axe"
+        tools:layout="@layout/fragment_switch_axe" />
 </navigation>

@@ -24,28 +24,17 @@ class MVViewModel @Inject constructor(
     var weaponType: WeaponType = WeaponType.GREAT_SWORD
 
     fun getMotionValues() {
-        _motionValuesLiveData.postValue(MotionValuesState.LOADING)
 
         viewModelScope.launch(ioDispatcher) {
-            try {
                 val response = motionValuesRepo.getMotionValues(weaponType)
-                if (response.isSuccessful) {
                     response.body()?.let {
                         _motionValuesLiveData.postValue(MotionValuesState.SUCCESS(it))
                     } ?: throw Exception("Response is null")
                 }
-                else {
-                    throw Exception("No successful response")
-                }
-            }
-            catch (e: Exception) {
-                _motionValuesLiveData.postValue(MotionValuesState.ERROR(e))
-            }
-        }
     }
 
     override fun onCleared() {
         super.onCleared()
-        Log.d("JokesViewModel", "ViewModel destroyed")
+        Log.d("MVViewModel", "ViewModel destroyed")
     }
 }

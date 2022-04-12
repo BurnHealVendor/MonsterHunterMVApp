@@ -11,6 +11,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.monsterhuntermvapp.MotionValuesApp
 import com.example.monsterhuntermvapp.adapter.MotionValuesAdapter
 import com.example.monsterhuntermvapp.databinding.FragmentGreatSwordBinding
+import com.example.monsterhuntermvapp.databinding.FragmentSwordAndShieldBinding
 import com.example.monsterhuntermvapp.model.MotionValuesItem
 import com.example.monsterhuntermvapp.rest.MotionValuesRepo
 import com.example.monsterhuntermvapp.utils.MotionValuesState
@@ -18,13 +19,13 @@ import com.example.monsterhuntermvapp.viewmodel.MVViewModel
 import com.example.monsterhuntermvapp.viewmodel.MVViewModelFactory
 import javax.inject.Inject
 
-class GreatSwordFrag : Fragment() {
+class SwordAndShieldFrag : Fragment() {
 
     @Inject
     lateinit var motionValuesRepo: MotionValuesRepo
 
     private val binding by lazy {
-        FragmentGreatSwordBinding.inflate(layoutInflater)
+        FragmentSwordAndShieldBinding.inflate(layoutInflater)
     }
 
     private val mvViewModel by lazy {
@@ -46,7 +47,7 @@ class GreatSwordFrag : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
 
-        binding.greatSwordRecView.apply {
+        binding.swordAndShieldRecView.apply {
             layoutManager = LinearLayoutManager(requireContext(), LinearLayoutManager.VERTICAL, false)
             adapter = mvAdapter
         }
