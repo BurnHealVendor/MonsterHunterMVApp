@@ -1,6 +1,5 @@
 package com.example.monsterhuntermvapp.rest
 
-import com.example.monsterhuntermvapp.model.MotionValues
 import com.example.monsterhuntermvapp.model.MotionValuesItem
 import com.example.monsterhuntermvapp.utils.WeaponType
 import retrofit2.Response

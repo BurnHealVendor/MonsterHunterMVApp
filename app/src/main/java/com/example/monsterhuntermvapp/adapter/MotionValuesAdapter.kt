@@ -4,9 +4,7 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.example.monsterhuntermvapp.databinding.MotionValueItemBinding
-import com.example.monsterhuntermvapp.model.MotionValues
 import com.example.monsterhuntermvapp.model.MotionValuesItem
-import com.google.gson.annotations.SerializedName
 
 class MotionValuesAdapter(
     private val motionValuesItem: MutableList<MotionValuesItem> = mutableListOf()

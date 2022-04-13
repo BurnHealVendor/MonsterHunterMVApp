@@ -11,7 +11,6 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.monsterhuntermvapp.MotionValuesApp
 import com.example.monsterhuntermvapp.adapter.MotionValuesAdapter
 import com.example.monsterhuntermvapp.databinding.FragmentChargeBladeBinding
-import com.example.monsterhuntermvapp.databinding.FragmentGreatSwordBinding
 import com.example.monsterhuntermvapp.model.MotionValuesItem
 import com.example.monsterhuntermvapp.rest.MotionValuesRepo
 import com.example.monsterhuntermvapp.utils.MotionValuesState
