@@ -23,8 +23,8 @@ Test cases have been created for testing loading, success and error states for t
   <li>Dagger - Recommended by Inaki. Also because it's the most commonly used DI library.</li>
 </ul>
 
-<h2>Future Work</h2>
+<h2>App Scalability</h2>
 
-Though the API is static, there is still a ton of information to present to users, especially those who are new to the game. The in-game tutorials of Monster Hunter games are usually extremely light, so an app that can break down core concepts to new players is always a positive.
+Though the API is static, there is still a ton of information to present to users, especially those who are new to the game. The in-game tutorials of Monster Hunter games are usually very barebones, so an app that can break down core concepts to new players is a valuable asset.
 
-Detailed information on the game's items, weapons, armor, monsters and more are all currently in the API. One option for scaling would be to incorporate that information into the app. Another path would be to expand the motion values with the button combinations of each attack by contributing to the API. The API could use a lot more data for systems that aren't explained in-game, which leaves a lot of room for scaling the app even further.
+Detailed information on the game's items, weapons, armor, monsters and more are all currently in the API. One option for scaling would be to incorporate all of that information into the app. Another path would be to expand the motion values with the button combinations of each attack by contributing to the API. The API could use a lot more data for systems that aren't explained in-game, which leaves a lot of room for scaling the app even further.
