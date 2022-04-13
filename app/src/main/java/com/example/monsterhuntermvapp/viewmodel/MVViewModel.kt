@@ -26,11 +26,21 @@ class MVViewModel @Inject constructor(
     fun getMotionValues() {
 
         viewModelScope.launch(ioDispatcher) {
+            try {
                 val response = motionValuesRepo.getMotionValues(weaponType)
+                if (response.isSuccessful) {
                     response.body()?.let {
                         _motionValuesLiveData.postValue(MotionValuesState.SUCCESS(it))
                     } ?: throw Exception("Response is null")
                 }
+                else {
+                    throw Exception("No successful response")
+                }
+            }
+            catch (e: Exception) {
+                _motionValuesLiveData.postValue(MotionValuesState.ERROR(e))
+            }
+        }
     }
 
     override fun onCleared() {
